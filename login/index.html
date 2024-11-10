@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Sanjal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* CSS for background image to cover screen on all devices */
+        body {
+            background-image: url('/login/Background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+    </style>
 </head>
+<body class="min-h-screen bg-opacity-90 text-gray-800">
 
-<body>
+    <!-- Header Section -->
+    <header class="bg-green-400 bg-opacity-90 p-4 lg:p-6 shadow-lg flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="/logo.jpg" alt="Company Logo" class="h-10 md:h-12 mr-3">
+            <h1 class="text-white text-2xl md:text-3xl font-bold">Welcome to Krishi Sanjal</h1>
+        </div>
+    </header>
 
-</body>
+    <!-- Main Content Section -->
+    <main class="container mx-auto mt-8 p-6 bg-white bg-opacity-90 rounded-lg shadow-md md:max-w-3xl md:flex flex-wrap md:h-100 md:w-30">
+        <h2 class="text-2xl font-semibold mb-4 text-center md:text-3xl lg:text-4xl">ABOUT US</h2>
+        <p class="text-gray-600 text-lg leading-7 mb-6 md:text-xl lg:text-2xl">
+            Krishi Sanjal is dedicated to bridging the gap between farmers and consumers by
+            providing a platform that eliminates middlemen and ensures fair pricing. Our goal
+            is to support local farmers and offer consumers fresh produce directly from farms.
+            By partnering with delivery companies, we make the farm-to-table journey faster and
+            more efficient.
+        </p>
 
+        <!-- Button Section -->
+        <div class="flex justify-center space-x-4 mt-8">
+            <a href="farmers_signup.html" class="bg-green-500 text-white py-2 px-4 rounded-lg shadow hover:bg-green-600 text-lg md:text-xl">
+                Sign Up as Farmer
+            </a>
+            <a href="consumers_signup.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 text-lg md:text-xl">
+                Sign Up as Consumer
+            </a>
+        </div>
+     </main>
+
+ </body>
 </html>

@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Login Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('/login/Background .jpg');">
 
-<body>
+    <!-- Background Overlay for Blur Effect -->
+    <div class="absolute inset-0 backdrop-blur-sm"></div>
+
+    <!-- Full Page Form -->
+    <form action="" class="relative w-full max-w-md p-8 bg-grey-300  rounded-lg shadow-xl z-10">
+        
+        <!-- Logo and Company Name -->
+        <div class="flex flex-col items-center mb-6">
+            <img src="/login/logo.jpg" alt="Company Logo" class="w-20 h-20 mb-3">
+            <h1 class=" md:text-2xl text-xl font-bold text-green-800">WELCOME BACK  TO KRISHI SANJAL </h1>
+        </div>
+
+        
+        
+        <!-- Login Form Fields -->
+        <div class="space-y-4">
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="mt-1 block w-full p-2 rounded-md border border-gray-300 focus:border-green-600 focus:ring-green-600 text-gray-900">
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" class="mt-1 block w-full p-2 rounded-md border border-gray-300 focus:border-green-600 focus:ring-green-600 text-gray-900">
+            </div>
+            
+            <!-- Login Button -->
+            <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">Login</button>
+        </div>
+
+        <!-- Additional Links -->
+        <div class="flex justify-between mt-4 text-sm text-gray-600">
+            <a href="#" class="hover:text-green-700">Forgot Password?</a>
+            <a href="#" class="hover:text-green-700">Create New Account</a>
+        </div>
+    </form>
 
 </body>
-
 </html>
+<form action=""></form>
