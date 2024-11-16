@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Page Login Form</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Krishi Sanjal</title>
+  <link rel="stylesheet" href="/login/consumersignup.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('/login/Background .jpg');">
 
-    <!-- Background Overlay for Blur Effect -->
-    <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+<body>
+  <div class="form">
+    <form action="">
+      <h1>Login to Krishi Sanjal</h1>
+      
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Username or Email" required>
+          <i class='bx bxs-user'></i>
+        </div>
+      </div>
+      
+      <div class="input-box">
+        <div class="input-field">
+          <input type="password" placeholder="Password" required>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+      </div>
 
-    <!-- Full Page Form -->
-    <form action="" class="relative w-full max-w-md p-8 bg-gray-100 bg-opacity-90 rounded-lg shadow-xl z-10 md:w-full md:h-100">
-        
-        <!-- Logo and Company Name (Top Aligned) -->
-        <div class="flex flex-col items-center mb-6 space-y-3 md:space-y-4 md:items-start md:flex-row md:space-x-6 md:justify-start">
-            <img src="/login/logo.jpg" alt="Company Logo" class="w-20 h-20">
-            <h1 class="text-xl font-bold text-green-800 md:text-2xl text-center md:text-left">WELCOME BACK TO KRISHI SANJAL</h1>
-        </div>
-        
-        <!-- Login Form Fields -->
-        <div class="space-y-4">
-            <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" class="mt-1 block w-full p-2 rounded-md border border-gray-300 focus:border-green-600 focus:ring-green-600 text-gray-900">
-            </div>
-            <div>
-                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" class="mt-1 block w-full p-2 rounded-md border border-gray-300 focus:border-green-600 focus:ring-green-600 text-gray-900">
-            </div>
-            
-            <!-- Login Button -->
-            <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">Login</button>
-        </div>
+      <div class="input-box">
+        <button type="submit" class="btn">Login</button>
+      </div>
 
-        <!-- Additional Links -->
-        <div class="flex justify-between mt-4 text-sm text-gray-600">
-            <a href="#" class="hover:text-green-700">Forgot Password?</a>
-            <a href="index.html" class="hover:text-green-700 text-blue-600">Create New Account</a>
-        </div>
+      <div class="form-footer">
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <p>Don't have an account? <a href="#" class="create-account">Create New Account</a></p>
+      </div>
     </form>
-
+  </div>
 </body>
+
 </html>

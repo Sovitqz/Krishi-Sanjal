@@ -1,14 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishi Sanjal - Consumer Signup</title>
+  <link rel="stylesheet" href="consumersignup.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="form">
+    <form action="">
+      <h1>Sign up to Krishi Sanjal</h1>
+      
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" name="fullName" required>
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Username" name="username" required>
+          <i class="bx bxs-user"></i>
+        </div>
+      </div>
+      
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Registration Code" name="registrationCode" required>
+          <i class="bx bxs-id-card"></i>
+        </div>
+        <div class="input-field">
+          <input type="date" placeholder="Date of Birth" name="dob" required>
+          <i class="bx bxs-calendar"></i>
+        </div>
+      </div>
 
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Shop Name" name="shopName" required>
+          <i class="bx bxs-store"></i>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Address" name="address" required>
+          <i class="bx bxs-map"></i>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="input-field">
+          <input type="email" placeholder="Email" name="email" required>
+          <i class="bx bxs-envelope"></i>
+        </div>
+        <div class="input-field">
+          <input type="number" placeholder="Phone number" name="phone" required>
+          <i class="bx bxs-phone"></i>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="input-field">
+          <input type="password" placeholder="Password" name="password" required>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Confirm Password" name="confirmPassword" required>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+      </div>
+      
+      <label><input type="checkbox" required> I hereby declare that the above information provided is true</label>
+      <button type="submit" class="btn">Sign up</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
 </body>
 
 </html>
